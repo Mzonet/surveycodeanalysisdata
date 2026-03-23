@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* ===== Base Styles ===== */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f111a, #1a1c2a);
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background: #0d1117;
+            color: #ffffff;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+        }
+
+        /* ===== Main Container ===== */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+        }
+
+        /* ===== Buttons ===== */
+        .dashboard-btn {
+            background: linear-gradient(145deg, #1f2937, #111827);
+            color: #ffffff;
+            padding: 18px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            width: 260px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .dashboard-btn:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+            background: linear-gradient(145deg, #3b82f6, #1e40af);
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #0d1117;
+            font-size: 0.9rem;
+            color: #999;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.4);
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 500px) {
+            .dashboard-btn {
+                width: 200px;
+                padding: 15px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Survey Result Code Analysis</h1>
+</header>
+
+<main>
+    <div class="button-container">
+        <a href="coctghs25.html" class="dashboard-btn" target="_blank">COCT GHS 2025</a>
+        <a href="coctdts25.html" class="dashboard-btn" target="_blank">COCT DTS 2025</a>
+        <a href="coctqlfs25.html" class="dashboard-btn" target="_blank">COCT QLFS 2025</a>
+        <a href="Edendts25.html" class="dashboard-btn" target="_blank">Eden DTS 2025</a>
+        <a href="Edenghs25.html" class="dashboard-btn" target="_blank">Eden GHS 2025</a>
+    </div>
+</main>
+
+<footer>
+    &copy; 2026 Interactive Result Coded Density Heat - Maps and Reports
+</footer>
+
+</body>
+</html>
